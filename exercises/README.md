@@ -39,6 +39,23 @@ uv run python exercises/exercise_4_multiagent.py
 
 ---
 
+### Bài Tập Cộng Điểm: Demo Agent Interaction
+**File:** `../demos/agent_interaction_demo.html`  
+**Mục tiêu:** Demo trực quan luồng tương tác Stage 4 hoặc Stage 5 và minh họa latency khi các specialist agents chạy song song.
+
+**Chạy:** Mở file HTML bằng trình duyệt, chọn Stage 4 hoặc Stage 5, sau đó bấm **Run Demo**.
+
+Để lấy latency thật của Stage 5:
+
+```bash
+./start_all.sh
+uv run python test_client.py
+```
+
+`test_client.py` sẽ in dòng `Latency: ...s` sau response.
+
+---
+
 ## Đáp Án
 
 Đáp án chi tiết có trong file `SOLUTIONS.md`. 

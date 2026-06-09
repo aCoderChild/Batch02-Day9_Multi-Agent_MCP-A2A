@@ -143,6 +143,9 @@ uv run python stages/stage_3_single_agent/main.py
 uv run python stages/stage_4_multi_agent/main.py
 ```
 
+The original codelab folder is also available as `stages/stage_4_milti_agent/`;
+`stages/stage_4_multi_agent/` is a compatibility wrapper with the corrected spelling.
+
 ## LLM Evolution Stages
 
 The `stages/` folder contains progressive demos that build from simple to complex, matching the roadmap in `docs/10_llm_roadmap.svg`:
@@ -181,7 +184,11 @@ legal_multiagent/
 │   ├── stage_1_direct_llm/
 │   ├── stage_2_rag_tools/
 │   ├── stage_3_single_agent/
-│   └── stage_4_multi_agent/
+│   ├── stage_4_milti_agent/
+│   └── stage_4_multi_agent/   # Correct-spelling wrapper
+│
+├── demos/
+│   └── agent_interaction_demo.html
 │
 └── docs/                      # Architecture diagrams (SVG)
 ```
@@ -217,3 +224,10 @@ The `docs/` folder contains SVG architecture diagrams:
 | `08_a2a_core_concepts` | A2A core concepts (Agent Cards, Tasks, Parts) |
 | `09_a2a_interaction_flow` | A2A interaction flow patterns |
 | `10_llm_roadmap` | LLM evolution roadmap (Stages 1–5) |
+
+## Extra Credit Demo
+
+Open `demos/agent_interaction_demo.html` in a browser to demo Stage 4/Stage 5
+agent interactions. When Stage 5 is running, `uv run python test_client.py` now
+prints total request latency so you can compare it with the parallel-delegation
+latency explanation in `exercises/SOLUTIONS.md`.

@@ -1,0 +1,7 @@
+2026-06-09 16:57:57,089 [customer_agent] INFO HTTP Request: POST http://localhost:10000/register "HTTP/1.1 200 OK"
+2026-06-09 16:57:57,089 [customer_agent] INFO Registered with registry (attempt 1)
+2026-06-09 16:57:57,090 [customer_agent] INFO Customer Agent listening on port 10100
+INFO:     Started server process [43049]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:10100 (Press CTRL+C to quit)
